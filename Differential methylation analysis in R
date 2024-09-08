@@ -19,7 +19,6 @@ data.met <- GDCquery(project = 'TCGA-LUSC',
                      data.type = 'Methylation Beta Value')
 
 #retrieving query
-#don't forget to set your directory beforehand!
 GDCdownload(data.met)
 tcga_data <- GDCprepare(data.met)
 
